@@ -1,4 +1,3 @@
-AdaptiveApp
 AdaptiveApp es una aplicación Android orientada a demostrar cómo una interfaz de usuario puede adaptarse automáticamente al contexto del entorno utilizando los sensores del dispositivo. La app detecta condiciones como baja iluminación, alta exposición a luz, movimiento o movimiento intenso, y en función de ello modifica la presentación visual para mejorar la experiencia de uso.
 
 ¿Para qué sirve?
