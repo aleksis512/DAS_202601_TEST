@@ -1,71 +1,88 @@
-AdaptiveApp es una aplicación Android orientada a demostrar cómo una interfaz de usuario puede adaptarse automáticamente al contexto del entorno utilizando los sensores del dispositivo. La app detecta condiciones como baja iluminación, alta exposición a luz, movimiento o movimiento intenso, y en función de ello modifica la presentación visual para mejorar la experiencia de uso.
+# AdaptiveApp
 
-¿Para qué sirve?
-El objetivo principal de la aplicación es mostrar cómo un sistema móvil puede implementar adaptación en tiempo real para aumentar la usabilidad, accesibilidad y seguridad del usuario. En lugar de mantener una interfaz fija, la aplicación responde al contexto detectado por el dispositivo y ajusta su comportamiento automáticamente.
+AdaptiveApp es una aplicación móvil desarrollada en Android que demuestra cómo una interfaz de usuario puede **adaptarse automáticamente al contexto del entorno** utilizando sensores del dispositivo. La app detecta condiciones como la iluminación ambiental y el movimiento del usuario para modificar su comportamiento visual en tiempo real.
 
-¿Qué hace la aplicación?
-AdaptiveApp utiliza dos sensores principales del teléfono:
+## Descripción
 
-Sensor de luz: mide la iluminación del entorno.
+El propósito de esta aplicación es mostrar cómo un sistema adaptativo puede mejorar la **usabilidad**, la **accesibilidad** y la **seguridad** del usuario mediante cambios automáticos en la interfaz.
 
-Acelerómetro: detecta el nivel de movimiento del dispositivo.
+A diferencia de una aplicación tradicional con una interfaz fija, AdaptiveApp responde al contexto detectado por el dispositivo y aplica ajustes dinámicos según las condiciones del entorno.
 
-Con base en esos datos, la app realiza adaptaciones como:
+## Objetivo
 
-Activar modo oscuro en ambientes con poca luz.
+El objetivo principal de AdaptiveApp es implementar un prototipo funcional de **software adaptativo en Android**, capaz de reaccionar ante estímulos físicos del entorno y ajustar la experiencia de usuario en consecuencia.
 
-Activar alto contraste cuando hay demasiada iluminación.
+## Funcionalidades principales
 
-Aumentar el tamaño del texto para mejorar la legibilidad.
+La aplicación utiliza los sensores del dispositivo para detectar cambios en el entorno y aplicar adaptaciones automáticas como:
 
-Mostrar una alerta de seguridad cuando detecta movimiento intenso.
+- Activación de **modo oscuro** en ambientes con poca luz.
+- Activación de **alto contraste** cuando existe una exposición elevada a la luz.
+- Ajuste dinámico del **tamaño del texto** para mejorar la legibilidad.
+- Detección de **movimiento** y **movimiento intenso** mediante el acelerómetro.
+- Visualización de una **alerta de seguridad** cuando el usuario se encuentra en movimiento intenso.
+- Activación de un **modo simplificado** que reduce elementos visuales innecesarios en situaciones de movimiento.
+- Registro de un **log adaptativo en tiempo real** con el estado actual del sistema.
 
-Ocultar partes secundarias de la interfaz y activar un modo simplificado cuando el usuario está en movimiento.
+## Sensores utilizados
 
-Mostrar un log adaptativo en tiempo real con el estado actual del sistema.
+AdaptiveApp se basa en dos sensores principales del dispositivo móvil:
 
-Propósito del proyecto
-Este proyecto fue desarrollado como una demostración práctica de software adaptativo en Android, aplicando principios de:
+- **Sensor de luz**: permite medir la iluminación del entorno.
+- **Acelerómetro**: permite detectar el nivel de movimiento del dispositivo.
 
-Interfaces contextuales.
+## Arquitectura general
 
-Computación adaptativa.
+La aplicación está compuesta principalmente por dos clases:
 
-Accesibilidad dinámica.
+### `AdaptiveManager`
+Se encarga de:
 
-Uso de sensores móviles.
+- Escuchar los sensores del dispositivo.
+- Procesar los valores de luz y aceleración.
+- Calcular el estado adaptativo del sistema.
+- Notificar los cambios a la interfaz.
 
-Diseño centrado en el usuario.
+### `MainActivity`
+Se encarga de:
 
-Arquitectura general
-La aplicación se compone principalmente de dos clases:
+- Construir la interfaz de usuario.
+- Recibir el estado adaptativo calculado.
+- Aplicar visualmente las adaptaciones en tiempo real.
 
-AdaptiveManager: se encarga de leer los sensores, procesar los datos y calcular el estado adaptativo.
+## Propósito académico
 
-MainActivity: construye la interfaz y aplica visualmente las adaptaciones calculadas.
+Este proyecto fue desarrollado con fines académicos para demostrar la aplicación de conceptos relacionados con:
 
-De esta forma, la lógica de adaptación se mantiene separada de la lógica de presentación, facilitando el mantenimiento y la escalabilidad del código.
+- **Software adaptativo**
+- **Interfaces contextuales**
+- **Accesibilidad dinámica**
+- **Sensores en dispositivos móviles**
+- **Diseño centrado en el usuario**
 
-Tecnologías usadas
-Java
+## Tecnologías utilizadas
 
-Android SDK
+- **Java**
+- **Android Studio**
+- **Android SDK**
+- **SensorManager**
+- **AppCompat**
+- **CardView**
 
-SensorManager
+## Caso de uso
 
-AppCompat
+AdaptiveApp puede servir como base conceptual para aplicaciones orientadas a:
 
-CardView
+- Movilidad inteligente
+- Seguridad en el uso del dispositivo
+- Interfaces accesibles
+- Aplicaciones contextuales
+- Sistemas de asistencia móvil
 
-UI construida programáticamente
+## Estado del proyecto
 
-Caso de uso
-AdaptiveApp puede entenderse como un prototipo de aplicación inteligente capaz de ajustarse automáticamente al contexto de uso del usuario. Este enfoque puede aplicarse en escenarios como:
+Proyecto académico funcional orientado a la exploración de adaptación dinámica de interfaces mediante sensores en Android.
 
-Apps de movilidad.
+## Autor
 
-Sistemas de asistencia al conductor.
-
-Aplicaciones accesibles para usuarios con necesidades visuales.
-
-Interfaces seguras para uso en movimiento.
+Desarrollado como parte de un proyecto académico de software adaptativo.
